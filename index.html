@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -180,3 +181,100 @@
     </main>
 </body>
 </html>
+=======
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newcomer Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="background-container">
+        <div id="main">
+            <header>
+                <h1 id="title">Newcomer Survey Form</h1>
+                <p id="description">Thank you for taking the time to fill this out - we value your input.</p>
+            </header>
+            <div class="grid">
+                <div class="container">
+                    <form id="survey-form">
+                        <div class="input">
+                            <label for="name" id="name-label">Name</label>
+                            <input type="text" placeholder="Enter your name" id="name" required>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input">
+                            <label for="email" id="email-label">Email</label>
+                            <input type="email" placeholder="Enter your email" id="email" required>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input">
+                            <label for="number" id="number-label">Age</label>
+                            <input type="number" placeholder="Enter your age" min="10" max="100" id="number" required>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input">
+                            <label for="dropdown">What <em>general</em> field mainly intrigued you to learn about programming?</label>
+                            <select id="dropdown" required>
+             <option value="">Select one</option>
+
+            <option value="1">Artificial Intelligence</option>
+                                <option value="2">Cybersecurity</option>
+                                <option value="3">Data Structures and Algorithms</option>
+                                <option value="4">Game Development</option>
+                                <option value="5">Software Engineering</option>
+                                <option value="6">Web Development</option>
+                            </select>
+                        </div>
+                        <div class="input-text">
+                            <p>What makes you want to learn programming?</p>
+                            <label for="Career Opportunities" class="radio-button">
+                                <input id="career Opportunities" type="radio" name="season" required value="career Opportunities">Career Opportunities
+                            </label>
+                            <label for="Challenging yourself" class="radio-button">
+                                <input id="challenging yourself" type="radio" name="season" required value="challenging yourself">Challenging yourself
+                            </label>
+                            <label for="Creating something" class="radio-button">
+                                <input id="creating something" type="radio" name="season" required value="creating something">Creating something
+                            </label>
+                            <label for="Problem solving" class="radio-button">
+                                <input id="problem solving" type="radio" name="season" required value="problem solving">Problem solving
+                            </label>
+                            <label for="Innovating" class="radio-button">
+                                <input id="innovating" type="radio" name="season" required value="innovating">Innovating
+                            </label>
+                            </label>
+                            <label for="Others" class="radio-button">
+                            <input id="others" type="radio" name="season" required value="others">Others
+                            </label>
+                        </div>
+                        <div class="input-question">
+                            <p>How do you feel about learning programming?</p>
+                            <label for="interested" class="checkbox">
+                                <input id="interested" type="checkbox" name="programming" value="interested">Interested
+                            </label>
+                            <label for="Neutral" class="checkbox">
+                                <input id="neutral" type="checkbox" name="programming" value="neutral">Neutral
+                            </label>
+                            <label for="uninterested" class="checkbox">
+                                <input id="uninterested" type="checkbox" name="programming" value="uninterested">Uninterested
+                            </label>
+                            <label for="Unsure" class="checkbox">
+                                <input id="unsure" type="checkbox" name="programming" value="unsure">Unsure
+                            </label>
+
+                        </div>
+                        <div class="input-textfield">
+                            <label for="comments">What do you want to learn more about programming?</label>
+                            <textarea id="comments" placeholder="Type here.."></textarea>
+                        </div>
+                        <button id="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+>>>>>>> origin/main
