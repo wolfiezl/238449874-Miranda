@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav header {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: purple;
+}
+
+#wrapper {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link {
+    display: inline-block;
+    width: 100vw;
+    height: 40px;
+    border-bottom: 1px solid black;
+    line-height: 40px;
+    font-size: 18px;
+    padding-left: 30px;
+    font-family: Roboto;
+}
+
+.nav-link:hover {
+    background-color: rgb(255, 240, 240);
+}
+
+main {
+    font-family: Roboto;
+    padding: 30px;
+}
+
+main a {
+    color: purple;
+}
+
+main a:hover {
+    color: darkred;
+}
+
+section {
+    padding-bottom: 30px;
+}
+
+section header {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: purple;
+}
+
+p {
+    padding-left: 20px;
+}
+
+ul {
+    padding-left: 75px;
+}
+
+.codeWrap {
+    border: 1px solid black;
+    margin-left: 50px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+code {
+    padding-left: 20px;
+}
+
+@media (min-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        border-right: 1px solid black;
+    }
+
+    #wrapper {
+        flex: auto;
+        overflow-y: scroll;
+    }
+
+    .nav-link {
+        width: 220px;
+        border-bottom: 1px solid black;
+    }
+
+    main {
+        margin-left: 250px;
+    }
+}

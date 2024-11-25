@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="background-container">
+        <div id="main">
+            <header>
+                <h1 id="title">Travel Survey Form</h1>
+                <p id="description">Thank you for taking the time to fill this out - we value your input.</p>
+            </header>
+            <div class="grid">
+                <div class="container">
+                    <form id="survey-form">
+                        <div class="input">
+                            <label for="name" id="name-label">Name</label>
+                            <input type="text" placeholder="Enter your name" id="name" required>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input">
+                            <label for="email" id="email-label">Email</label>
+                            <input type="email" placeholder="Enter your email" id="email" required>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input">
+                            <label for="number" id="number-label">Age</label>
+                            <input type="number" placeholder="Enter your age" min="10" max="100" id="number" required>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input">
+                            <label for="dropdown">How often do you travel?</label>
+                            <select id="dropdown" required>
+                                <option value="1">1-2 times a year</option>
+                                <option value="3">2-3 times a year</option>
+                                <option value="5">3-4 times a year</option>
+                                <option value="6">More than 4 times a year</option>
+                            </select>
+                        </div>
+                        <div class="input-travel">
+                            <p>What time of the year do you normally prefer to travel?</p>
+                            <label for="spring" class="radio-button">
+                                <input id="spring" type="radio" name="season" required value="spring">Spring
+                            </label>
+                            <label for="summer" class="radio-button">
+                                <input id="summer" type="radio" name="season" required value="summer">Summer
+                            </label>
+                            <label for="fall" class="radio-button">
+                                <input id="fall" type="radio" name="season" required value="fall">Fall
+                            </label>
+                            <label for="winter" class="radio-button">
+                                <input id="winter" type="radio" name="season" required value="winter">Winter
+                            </label>
+                        </div>
+                        <div class="input-country-destination">
+                            <p>What are your preferences for destinations?</p>
+                            <label for="europe" class="checkbox">
+                                <input id="europe" type="checkbox" name="destination" value="europe">Europe
+                            </label>
+                            <label for="north-america" class="checkbox">
+                                <input id="north-america" type="checkbox" name="destination" value="north-america">North America
+                            </label>
+                            <label for="south-america" class="checkbox">
+                                <input id="south-america" type="checkbox" name="destination" value="south-america">South America and Antilles
+                            </label>
+                            <label for="africa" class="checkbox">
+                                <input id="africa" type="checkbox" name="destination" value="africa">Africa
+                            </label>
+                            <label for="oceania" class="checkbox">
+                                <input id="oceania" type="checkbox" name="destination" value="oceania">Oceania
+                            </label>
+                            <label for="asia" class="checkbox">
+                                <input id="asia" type="checkbox" name="destination" value="asia">Asia
+                            </label>
+                        </div>
+                        <div class="input-textfield">
+                            <label for="comments">Any comments or something you want to add?</label>
+                            <textarea id="comments" placeholder="Type here.."></textarea>
+                        </div>
+                        <button id="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

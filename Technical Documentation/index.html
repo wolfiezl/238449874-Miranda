@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML and CSS Documentation</header>
+        <div id="wrapper">
+            <a href="#What_is_HTML?" class="nav-link">What is HTML?</a>
+            <a href="#What_is_CSS?" class="nav-link">What is CSS?</a>
+            <a href="#HTML_Structure" class="nav-link">HTML Structure</a>
+            <a href="#HTML_Elements" class="nav-link">HTML Elements</a>
+            <a href="#CSS_Basics" class="nav-link">CSS Basics</a>
+            <a href="#CSS_Selectors" class="nav-link">CSS Selectors</a>
+            <a href="#CSS_Box_Model" class="nav-link">CSS Box Model</a>
+            <a href="#Responsive_Design" class="nav-link">Responsive Design</a>
+            <a href="#CSS_Flexbox" class="nav-link">CSS Flexbox</a>
+            <a href="#CSS_Grid" class="nav-link">CSS Grid</a>
+            <a href="#CSS_Transitions" class="nav-link">CSS Transitions</a>
+            <a href="#References" class="nav-link">References</a>
+        </div>
+    </nav>
+    
+    <main id="main-doc">
+        <section id="What_is_HTML?" class="main-section">
+            <header>What is HTML?</header>
+            <p>
+                HTML (HyperText Markup Language) is the standard markup language used to create web pages. It defines the structure and layout of a web document by using a system of tags and attributes.
+            </p>
+            <p>
+                HTML forms the backbone of every web page, providing the structure for adding text, images, links, and other elements.
+            </p>
+        </section>
+        
+        <section id="What_is_CSS?" class="main-section">
+            <header>What is CSS?</header>
+            <p>
+                CSS (Cascading Style Sheets) is used to style and design the layout of web pages. It controls the visual presentation of HTML elements such as fonts, colors, and positioning.
+            </p>
+            <p>
+                With CSS, you can create visually appealing web pages by adjusting the look and feel, while HTML defines the content.
+            </p>
+        </section>
+        
+        <section id="HTML_Structure" class="main-section">
+            <header>HTML Structure</header>
+            <p>
+                HTML documents are structured hierarchically with nested elements. At the top level, the document starts with the `<!DOCTYPE html>` declaration followed by the `<html>` element. The document is split into two main sections: the `<head>` and the `<body>`.
+            </p>
+            <p>Example of basic HTML structure:</p>
+            <div class="codeWrap">
+                <code>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;Page Title&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+                    &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </code>
+            </div>
+        </section>
+        
+        <section id="HTML_Elements" class="main-section">
+            <header>HTML Elements</header>
+            <p>HTML elements are the building blocks of web pages. Each element is defined using opening and closing tags, with content in between. Some common elements include:</p>
+            <ul>
+                <li><code>&lt;h1&gt;</code> - Heading 1 (used for the main heading)</li>
+                <li><code>&lt;p&gt;</code> - Paragraph (used for text content)</li>
+                <li><code>&lt;a&gt;</code> - Anchor (used for links)</li>
+                <li><code>&lt;img&gt;</code> - Image (used for embedding images)</li>
+            </ul>
+        </section>
+
+        <section id="CSS_Basics" class="main-section">
+            <header>CSS Basics</header>
+            <p>
+                CSS styles are applied to HTML elements by using selectors. You can select HTML elements based on their tag name, class, id, or attributes, and apply styles to them using various properties.
+            </p>
+            <p>Example of a basic CSS rule:</p>
+            <div class="codeWrap">
+                <code>
+                    h1 {<br>
+                    &nbsp;&nbsp;color: blue;<br>
+                    }
+                </code>
+            </div>
+        </section>
+
+        <section id="CSS_Selectors" class="main-section">
+            <header>CSS Selectors</header>
+            <p>
+                CSS selectors target HTML elements to apply styles. Some common types of selectors include:
+            </p>
+            <ul>
+                <li><code>element</code> - Targets all elements of that type (e.g., <code>p</code> for all paragraphs).</li>
+                <li><code>.class</code> - Targets elements with the specified class attribute.</li>
+                <li><code>#id</code> - Targets an element with a specific id attribute.</li>
+            </ul>
+        </section>
+        
+        <section id="CSS_Box_Model" class="main-section">
+            <header>CSS Box Model</header>
+            <p>
+                The CSS box model represents the layout of elements as rectangular boxes. It consists of content, padding, border, and margin. Understanding the box model is crucial for layout design and element spacing.
+            </p>
+            <ul>
+                <li><strong>Content</strong> - The actual content of the element.</li>
+                <li><strong>Padding</strong> - Space between the content and the border.</li>
+                <li><strong>Border</strong> - The line surrounding the padding.</li>
+                <li><strong>Margin</strong> - The space outside the border, separating the element from others.</li>
+            </ul>
+        </section>
+
+        <section id="Responsive_Design" class="main-section">
+            <header>Responsive Design</header>
+            <p>
+                Responsive design ensures that web pages look good on all devices by adjusting the layout based on the screen size. CSS media queries allow you to define different styles for various screen widths.
+            </p>
+            <p>Example of a media query:</p>
+            <div class="codeWrap">
+                <code>
+                    @media (max-width: 600px) {<br>
+                    &nbsp;&nbsp;body {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 14px;<br>
+                    &nbsp;&nbsp;}<br>
+                    }
+                </code>
+            </div>
+        </section>
+        
+        <section id="CSS_Flexbox" class="main-section">
+            <header>CSS Flexbox</header>
+            <p>
+                Flexbox is a layout model in CSS that allows you to align elements efficiently within a container. It provides an easy way to create flexible and responsive layouts.
+            </p>
+            <p>Example of a flex container:</p>
+            <div class="codeWrap">
+                <code>
+                    .container {<br>
+                    &nbsp;&nbsp;display: flex;<br>
+                    &nbsp;&nbsp;justify-content: space-between;<br>
+                    }
+                </code>
+            </div>
+        </section>
+
+        <section id="CSS_Grid" class="main-section">
+            <header>CSS Grid</header>
+            <p>
+                CSS Grid Layout allows you to create two-dimensional layouts, both rows and columns, with more control than Flexbox. It’s perfect for complex web designs.
+            </p>
+            <p>Example of a grid layout:</p>
+            <div class="codeWrap">
+                <code>
+                    .grid-container {<br>
+                    &nbsp;&nbsp;display: grid;<br>
+                    &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+                    }
+                </code>
+            </div>
+        </section>
+
+        <section id="CSS_Transitions" class="main-section">
+            <header>CSS Transitions</header>
+            <p>
+                CSS transitions allow you to change property values smoothly (over a given duration). This can be used for hover effects, animations, and other dynamic changes in style.
+            </p>
+            <p>Example of a CSS transition:</p>
+            <div class="codeWrap">
+                <code>
+                    .button {<br>
+                    &nbsp;&nbsp;transition: background-color 0.3s ease;<br>
+                    }<br>
+                    .button:hover {<br>
+                    &nbsp;&nbsp;background-color: red;<br>
+                    }
+                </code>
+            </div>
+        </section>
+        
+        <section id="References" class="main-section">
+            <header>References</header>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML Documentation</a><br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN CSS Documentation</a><br>
+                <a href="https://www.w3schools.com/">W3Schools</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
